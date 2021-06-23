@@ -1,9 +1,11 @@
 #include <iostream>
 #include "math.h"
 
-
-float add(int a, int b);
-
+template <typename T>
+T add(T a, T b)
+{
+    return a + b;
+}
 
 int main()
 {
@@ -17,7 +19,3 @@ int main()
     return 0;
 }
 
-float add(int a, int b)
-{
-    return a + b;
-}
